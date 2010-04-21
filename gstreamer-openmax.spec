@@ -1,18 +1,21 @@
+#
+%include	/usr/lib/rpm/macros.gstreamer
+#
 Summary:	GStreamer plug-in that allows communication with OpenMAX IL components
 Summary(pl.UTF-8):	Wtyczka GStreamera pozwalająca na komunikację z komponentami OpenMAX IL
 Name:		gstreamer-openmax
-Version:	0.10.0.4
+Version:	0.10.0.5
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 # when becomes stable
 #Source0:	http://gstreamer.freedesktop.org/src/gst-openmax/gst-openmax-%{version}.tar.bz2
 Source0:	http://gstreamer.freedesktop.org/src/gst-openmax/pre/gst-openmax-%{version}.tar.bz2
-# Source0-md5:	5c250ac8027ba855bc46b1bf8aefa658
+# Source0-md5:	a48b336e62694c9d58fc828eb51dbb09
 URL:		http://gstreamer.net/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gstreamer-devel >= 0.10.0
+BuildRequires:	gstreamer-devel >= 0.10.22
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 Requires:	gstreamer >= 0.10.0
@@ -37,7 +40,7 @@ funkcji grafiki komputerowej, obrazu i dźwięku komp.
 
 %build
 %{__libtoolize}
-%{__aclocal} -I common/m4
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
