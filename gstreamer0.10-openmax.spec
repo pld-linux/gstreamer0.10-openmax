@@ -1,5 +1,4 @@
 #
-%include	/usr/lib/rpm/macros.gstreamer
 Summary:	GStreamer 0.10 plug-in that allows communication with OpenMAX IL components
 Summary(pl.UTF-8):	Wtyczka GStreamera 0.10 pozwalająca na komunikację z komponentami OpenMAX IL
 Name:		gstreamer0.10-openmax
